@@ -1,0 +1,3395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Matrix - eCommerce Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/logo4.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.jpg" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>PC Matrix</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+ <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/pc1.jpg" alt="PC" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        PC Computer
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/home" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping</b>
+            This Week Order Over - $55
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo3.png" alt="PC Matrix" width="150" height="120">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Electronics</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Desktop</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Laptop</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Camera</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Tablet</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Headphone</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-1.png" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Peripherals</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Headphones</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Keyboards</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mice</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Speakers</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Webcams</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-4.png" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Accessories</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Case Fans</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Fan Controllers</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Thermal Compound</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">External Hard Drives</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Optical Drives</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-3.png" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Expansions & Displays</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Sound Cards</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Wired Networking</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Wireless Networking</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Monitors</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Operating Systems</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-2.png" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Electronics</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Desktop</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Laptop</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Camera</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Tablet</a>
+              </li>
+              
+              <li class="dropdown-item">
+                <a href="#">Headphone</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Peripherals</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Headphones</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Keyboards</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Mice</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Speakers</a>
+              </li>
+              
+              <li class="dropdown-item">
+                <a href="#">Webcams</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Accessories</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Case Fans</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Fan Controllers</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Thermal Compound</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">External Hard Drives</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Optical Drives</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Power Supplies</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Expansions & Displays</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Sound Cards</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Wired Networking</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Wireless Networking</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Monitors</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Operating Systems</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Compatibility Check</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Assembly Tutorials</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+<!--Mobile shiz-->
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Electronics</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Desktop</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Laptop</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Camera</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Tablet</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Peripherals</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Headphones</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Keyboards</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Mice</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Speakers</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Accessories</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Case Fans</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Fan Controllers</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Thermal Compound</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Optica Drives</a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Expansions & Displays</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Sound Cards</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Wired Networking</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Wireless Networking</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Monitors</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Compatibility Check</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">PC Assembly Tutorials</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="https://www.facebook.com/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/home" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-1.png" alt="Custom Gaming PC's" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending item</p>
+
+              <h2 class="banner-title">Custom Gaming PC's</h2>
+
+              <p class="banner-text">
+                Starting at &dollar; <b>50</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-2.jpg" alt="PC Computers" class="banner-img">
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/nav-cpu-2023.png" alt="CPU" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">CPU's</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/nav-videocard-2023.png" alt="Video Card" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Video Cards</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/nav-case-2023.png" alt="PC Case" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">PC Cases</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/nav-motherboard-2023.png" alt="Motherboard" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Motherboards</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/nav-opticaldrive-2023.jpg" alt="Optical Drive" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Optical Drives</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/nav-memory-2023.png" alt="Memory" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Memory</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/nav-monitor-2023.jpg" alt="monitor" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Monitors</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/nav-soundcard-2023.jpg" alt="soundcard" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Sound Cards</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+<!--Mobile shiz-->
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/pic1.jpg" alt="CPU" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Core Components</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">CPU's/Processors</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Memory</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Motherboards</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">GPU's & Video Graphics Devices</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Computer Cases</p>
+                      <data value="95" class="stock" title="Available Stock">95</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Power Supplies</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Fans & PC Cooling</p>
+                      <data value="87" class="stock" title="Available Stock">38</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Barebone/Mini Computers</p>
+                      <data value="87" class="stock" title="Available Stock">102</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Server Components</p>
+                      <data value="87" class="stock" title="Available Stock">55</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Sound Cards</p>
+                      <data value="87" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/pic2.png" alt="Storage Device" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Storage Devices</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hard Drives</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">SSDs</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Network Attached Storage (NAS)</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Backup Devices & Media</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">CD/DVD/Blu-Ray Burners & Media</p>
+                      <data value="26" class="stock" title="Available Stock">22</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">USB Flash Drives & Memory Cards</p>
+                      <data value="26" class="stock" title="Available Stock">37</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/pic5.jpg" alt="Peripherals" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Peripherals</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Monitors</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Input Devices</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Keyboards & Mice</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Printers/Scanners & Supplies</p>
+                      <data value="61" class="stock" title="Available Stock">101</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Power Protection</p>
+                      <data value="61" class="stock" title="Available Stock">49</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Headsets, Speakers & Soundcards</p>
+                      <data value="61" class="stock" title="Available Stock">157</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">KVM Switches</p>
+                      <data value="61" class="stock" title="Available Stock">78</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Projectors</p>
+                      <data value="61" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">3D Printing</p>
+                      <data value="61" class="stock" title="Available Stock">39</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/pic4.jpg" alt="Monitors" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Monitors</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">LCD/LED Monitors</p>
+                      <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Gaming Monitors</p>
+                      <data value="60" class="stock" title="Available Stock">60 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Portable Monitors</p>
+                      <data value="50" class="stock" title="Available Stock">50 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Monitor Accessories</p>
+                      <data value="87" class="stock" title="Available Stock">87 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">5K/4K/2K Monitors</p>
+                      <data value="87" class="stock" title="Available Stock">98 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Curved Monitors</p>
+                      <data value="87" class="stock" title="Available Stock">99 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">USB Type-C Monitors</p>
+                      <data value="87" class="stock" title="Available Stock">81 pcs</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">  
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/pic3.jpg" alt="Keyboards & Mice" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Keyboards & Mice</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Keyboards</p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Gaming Keyboards</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Mice</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Gaming Mice</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Mouse Pads & Keyboard Accessories</p>
+                      <data value="23" class="stock" title="Available Stock">21</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/pic6.jpg" alt="Input Devices" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Input Devices</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">VR Headsets</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">PC Game Controllers</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Web Cams</p>
+                      <data value="48" class="stock" title="Available Stock">25</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Graphics Tablets</p>
+                      <data value="48" class="stock" title="Available Stock">98</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Video Capturing Devices</p>
+                      <data value="48" class="stock" title="Available Stock">12</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Microphones</p>
+                      <data value="48" class="stock" title="Available Stock">8</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/pic7.jpg" alt="Accessories" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Accessories/Other</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Fan Controllers</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Operating System</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Thermal Compound</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Opitcal Drives</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Power Supplies</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <!--BEST SELLERS-->
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">best sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/1.jpg" alt="ARCTIC MX-6 4 g Thermal Paste" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">ARCTIC MX-6 4 g Thermal Paste</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$20.00</del>
+                      <p class="price">$14.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/2.jpg" alt="Microsoft Windows 10 Pro OEM - DVD 64-bit" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Microsoft Windows 10 Pro OEM - DVD 64-bit</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$200.00</del>
+                      <p class="price">$150.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/3.jpg" alt="Kingwin FPX-001 Fan Controller" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Kingwin FPX-001 Fan Controller</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$15.00</del>
+                      <p class="price">$13.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/4.jpg" alt="CyberPower CP1500PFCLCD UP" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">CyberPower CP1500PFCLCD UPS</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$100.00</del>
+                      <p class="price">$80.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">New Arrivals</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-1.jpg" alt="GIGABYTE 34 144Hz 2K Curved Gaming Monitor 1ms FreeSync Premium, UWQHD 3440 x 1440 VA 1500R Display, (MPRT), 90% DCI-P3, VESA Display HDR400, 2x DisplayPort 1.4, 2x HDMI 2.0 G34WQC A-SA" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">GIGABYTE 34" 144Hz 2K Curved Gaming Monitor 1ms FreeSync Premium, UWQHD 3440 x 1440 VA 1500R Display, (MPRT), 90% DCI-P3, VESA Display HDR400, 2x DisplayPort 1.4, 2x HDMI 2.0 G34WQC A-SA</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Monitors</a>
+
+                      <div class="price-box">
+                        <p class="price">$45.00</p>
+                        <del>$60.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-2.jpg" alt="CORSAIR RM1000e Fully Modular Low-Noise ATX Power Supply - ATX 3.0 & PCIe 5.0 Compliant - 105°C-Rated Capacitors - 80 PLUS Gold Efficiency - Modern Standby Support" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">CORSAIR RM1000e Fully Modular Low-Noise ATX Power Supply - ATX 3.0 & PCIe 5.0 Compliant - 105°C-Rated Capacitors - 80 PLUS Gold Efficiency - Modern Standby Support</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Power Supply</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$150.00</p>
+                        <del>$179.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-3.jpg" alt="Nextorage Japan Internal SSD 2TB for PS5 and PC Storage Expansion M.2 2280 with Heatsink PCIe Gen4.0 NVMe 3D TLC NAND NEM-PA2TB/N SYM 1400TBW with Maximum Transfer Rate Read: 7300MB/s, Write: 6900MB/s" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Nextorage Japan Internal SSD 2TB for PS5 and PC Storage Expansion M.2 2280 with Heatsink PCIe Gen4.0 NVMe 3D TLC NAND NEM-PA2TB/N SYM 1400TBW with Maximum Transfer Rate Read: 7300MB/s, Write: 6900MB/s</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Storage</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$99.00</p>
+                        <del>$249.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-4.jpg" alt="MSI MPG Z690 FORCE WIFI DDR5 LGA 1700 Intel Z690 SATA 6Gb/s ATX Intel Motherboard" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">MSI MPG Z690 FORCE WIFI DDR5 LGA 1700 Intel Z690 SATA 6Gb/s ATX Intel Motherboard</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Motherboard</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$189.00</p>
+                        <del>$369.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Trending</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-9.jpg" alt="EVGA X20 Gaming Mouse, Wireless, Grey, Customizable, 16,000 DPI, 5 Profiles, 10 Buttons, Ergonomic 903-T1-20GR-KR" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">EVGA X20 Gaming Mouse, Wireless, Grey, Customizable, 16,000 DPI, 5 Profiles, 10 Buttons, Ergonomic 903-T1-20GR-KR</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mice</a>
+            
+                      <div class="price-box">
+                        <p class="price">$24.00</p>
+                        <del>$69.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-10.jpg" alt="LUOM 6 Button 4000 DPI USB Wired Mechanical Gaming Mouse Mice 4 LED Backlit Optical Professional Game Mouse Mice for PC Laptop" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">LUOM 6 Button 4000 DPI USB Wired Mechanical Gaming Mouse Mice 4 LED Backlit Optical Professional Game Mouse Mice for PC Laptop</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mice</a>
+            
+                      <div class="price-box">
+                        <p class="price">$25.00</p>
+          
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-11.jpg" alt="KTC Gaming Monitor, 27 Inch 1440p 165Hz 144hz Monitor, 2K QHD 1ms GTG Fast IPS Computer Monitor, HDR, HDMI/USB C/DP Vertical Monitor, FreeSync & G-Sync, Swivel Tilt Height Pivot Adjustable, H27T22" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">KTC Gaming Monitor, 27 Inch 1440p 165Hz 144hz Monitor, 2K QHD 1ms GTG Fast IPS Computer Monitor, HDR, HDMI/USB C/DP Vertical Monitor, FreeSync & G-Sync, Swivel Tilt Height Pivot Adjustable, H27T22</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Monitor</a>
+            
+                      <div class="price-box">
+                        <p class="price">$229.00</p>
+                        <del>$299.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-12.jpg" alt="CORSAIR K70 PRO MINI WIRELESS RGB 60% Mechanical Gaming Keyboard, Backlit RGB LED, CHERRY MX Red Keyswitches, Black (CH-9189010-NA)" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">CORSAIR K70 PRO MINI WIRELESS RGB 60% Mechanical Gaming Keyboard, Backlit RGB LED, CHERRY MX Red Keyswitches, Black (CH-9189010-NA)</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Monitor</a>
+            
+                      <div class="price-box">
+                        <p class="price">$99.00</p>
+                        <del>$179.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Top Rated</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-5.jpg" alt="AMD Ryzen 5 7600X - 6-Core 4.7 GHz - Socket AM5 - 105W Desktop Processor (100-100000593WOF)" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">AMD Ryzen 5 7600X - 6-Core 4.7 GHz - Socket AM5 - 105W Desktop Processor (100-100000593WOF)</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Processor</a>
+                
+                      <div class="price-box">
+                        <p class="price">$249.00</p>
+                        <del>$299.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-6.jpg" alt="PURE LOOP 2 FX 240mm AIO CPU Water Cooler | High Performance AIO | 2 Light Wings 120mm PWM high-speed fans | ARGB Hub | Refillable Port | BW013" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">PURE LOOP 2 FX 240mm AIO CPU Water Cooler | High Performance AIO | 2 Light Wings 120mm PWM high-speed fans | ARGB Hub | Refillable Port | BW013</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Thermal Compound</a>
+                
+                      <div class="price-box">
+                        <p class="price">$129.00</p>
+                    
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-7.jpg" alt="Anker Power Strip Surge Protector (2100J), 12 Outlets with 2 USB A and 1 USB C Port for Multiple Devices, 5ft Extension Cord, 20W Power Delivery Charging for Home, Office, Dorm Essential, TUV Listed" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Anker Power Strip Surge Protector (2100J), 12 Outlets with 2 USB A and 1 USB C Port for Multiple Devices, 5ft Extension Cord, 20W Power Delivery Charging for Home, Office, Dorm Essential, TUV Listed</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Essentials</a>
+                
+                      <div class="price-box">
+                        <p class="price">$32.99</p>
+                        
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/product-8.jpg" alt="IPASON - Gaming desktop - AMD Ryzen 5 5600G 6 core 3.9GHz - 16GB DDR4 3200MHz - 1TB M.2 NVMe - 550W PSU - Windows 11 home - WIFI - Gaming PC" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">IPASON - Gaming desktop - AMD Ryzen 5 5600G 6 core 3.9GHz - 16GB DDR4 3200MHz - 1TB M.2 NVMe - 550W PSU - Windows 11 home - WIFI - Gaming PC</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Gaming Desktop</a>
+                
+                      <div class="price-box">
+                        <p class="price">$469.00</p>
+                        <del>$849.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/product-13.jpg" alt="
+                    GIGABYTE Z790 AORUS XTREME X LGA 1700(14th13th12th Gen) Intel Z790 X EATX Motherboard with DDR5 5 M.2 PCIe 5.0 USB 3.2 Type-C Wi-Fi 7 10GbE LAN Q-Flash Plus EZ-Latch Plus and Intel Core i9-14900KF - Core i9 14th Gen 24-Core (8P+16E) LGA 170" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">
+                        GIGABYTE Z790 AORUS XTREME X LGA 1700(14th13th12th Gen) Intel Z790 X EATX Motherboard with DDR5 5 M.2 PCIe 5.0 USB 3.2 Type-C Wi-Fi 7 10GbE LAN Q-Flash Plus EZ-Latch Plus and Intel Core i9-14900KF - Core i9 14th Gen 24-Core (8P+16E) LGA 170</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">$1,149.00</p>
+
+                      <del>$1,250.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/product-14.jpg" alt="LIAN LI O11D Distro-Plate G1 Designed by EKWB with DDC 3.1 Pump LGA 1700 Compatible and LIAN LI PC-O11 Dynamic White Tempered Glass on the Front and Left Sides Chassis Body SECC ATX Mid Tower Gaming Computer Case - PC-O11DW
+                    " class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">LIAN LI O11D Distro-Plate G1 Designed by EKWB with DDC 3.1 Pump LGA 1700 Compatible and LIAN LI PC-O11 Dynamic White Tempered Glass on the Front and Left Sides Chassis Body SECC ATX Mid Tower Gaming Computer Case - PC-O11DW
+                      </a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">$1990.00</p>
+                      <del>$2000.00</del>
+                    </div>
+              
+                    <button class="add-cart-btn">add to cart</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+              
+                        <p> available: <b>40</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">New Products</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/product-15.jpg" alt="GIGABYTE Gaming GeForce RTX 4090 24GB GDDR6X PCI Express 4.0 x16 ATX Video Card GV-N4090GAMING OC-24GD" width="200" class="product-img default">
+                  <img src="./assets/images/products/product-15.2.jpg" alt="GIGABYTE Gaming GeForce RTX 4090 24GB GDDR6X PCI Express 4.0 x16 ATX Video Card GV-N4090GAMING OC-24GD" width="250" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">4090 24GB ATX Video Card</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">GIGABYTE Gaming GeForce RTX 4090 24GB GDDR6X PCI Express 4.0 x16 ATX Video Card GV-N4090GAMING OC-24GD</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-16.jpg" alt="SAMSUNG 980 PRO SSD 2TB, PCIe 4.0 M.2 2280, Speeds Up-to 6,400MB/s Best for High End Computing, Gaming, and Heavy Duty Workstations (MZV8P2T0B/AM)"width="150" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/product-16.2.jpg" alt="SAMSUNG 980 PRO SSD 2TB, PCIe 4.0 M.2 2280, Speeds Up-to 6,400MB/s Best for High End Computing, Gaming, and Heavy Duty Workstations (MZV8P2T0B/AM)" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">SAMSUNG PRO SSD 2TB</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">SAMSUNG 980 PRO SSD 2TB, PCIe 4.0 M.2 2280, Speeds Up-to 6,400MB/s Best for High End Computing, Gaming, and Heavy Duty Workstations (MZV8P2T0B/AM)</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$45.00</p>
+                    <del>$56.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-17.jpg" alt="GIGABYTE WINDFORCE GeForce RTX 4070 12GB GDDR6X PCI Express 4.0 x16 ATX Video Card GV-N4070WF3OC-12GD" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/product-17.2.jpg" alt="GIGABYTE WINDFORCE GeForce RTX 4070 12GB GDDR6X PCI Express 4.0 x16 ATX Video Card GV-N4070WF3OC-12GD" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">4070 12GB ATX Video Card</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">GIGABYTE WINDFORCE GeForce RTX 4070 12GB GDDR6X PCI Express 4.0 x16 ATX Video Card GV-N4070WF3OC-12GD</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$58.00</p>
+                    <del>$65.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-18.jpg" alt="ASRock B650M Pro RS WiFi AM5 AMD B650 SATA 6Gb/s Micro ATX Motherboard" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/product-18.2.jpg" alt="ASRock B650M Pro RS WiFi AM5 AMD B650 SATA 6Gb/s Micro ATX Motherboard" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">new</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category"> Micro ATX Motherboard</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">ASRock B650M Pro RS WiFi AM5 AMD B650 SATA 6Gb/s Micro ATX Motherboard</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$25.00</p>
+                    <del>$35.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-19.png" alt="ASRock Phantom Gaming Arc A770 8GB GDDR6 PCI Express 4.0 x16 ATX Video Card A770 PGD 8GO" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/product-19.2.jpg" alt="ASRock Phantom Gaming Arc A770 8GB GDDR6 PCI Express 4.0 x16 ATX Video Card A770 PGD 8GO" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">A770 8GB ATX Video Card</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">ASRock Phantom Gaming Arc A770 8GB GDDR6 PCI Express 4.0 x16 ATX Video Card A770 PGD 8GO</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$99.00</p>
+                    <del>$105.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-20.jpg" alt="ASUS TUF Gaming Z690-Plus WiFi LGA 1700(Intel 12th&13th Gen) ATX gaming motherboard(PCIe 5.0, DDR5,4xM.2/NVMe SSD,14+1 power stages,WiFi 6,Intel 2.5Gb LAN,front USB 3.2 Gen 2 Type-C®,Thunderbolt 4,Two-Way AI Noise Cancelation)" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/product-20.2.jpg" alt="ASUS TUF Gaming Z690-Plus WiFi LGA 1700(Intel 12th&13th Gen) ATX gaming motherboard(PCIe 5.0, DDR5,4xM.2/NVMe SSD,14+1 power stages,WiFi 6,Intel 2.5Gb LAN,front USB 3.2 Gen 2 Type-C®,Thunderbolt 4,Two-Way AI Noise Cancelation)" class="product-img hover"
+                    width="300">
+              
+                  
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category"> ASUS TUF Gaming Z690-Plus Motherboard</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">WiFi LGA 1700(Intel 12th&13th Gen) ATX gaming motherboard(PCIe 5.0, DDR5,4xM.2/NVMe SSD,14+1 power stages,WiFi 6,Intel 2.5Gb LAN,front USB 3.2 Gen 2 Type-C®,Thunderbolt 4,Two-Way AI Noise Cancelation)</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$150.00</p>
+                    <del>$170.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-21.jpg" alt="ASUS ROG STRIX B650-A GAMING WIFI 6E Socket AM5 (LGA 1718) Ryzen 7000 gaming motherboard(12 + 2 power stages, DDR5, three M.2 slots, PCIe 4.0, 2.5G LAN, WiFi 6E, USB 3.2 Gen 2x2 Type-C port, and Aura Sync RGB )" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/product-21.2.jpg" alt="ASUS ROG STRIX B650-A GAMING WIFI 6E Socket AM5 (LGA 1718) Ryzen 7000 gaming motherboard(12 + 2 power stages, DDR5, three M.2 slots, PCIe 4.0, 2.5G LAN, WiFi 6E, USB 3.2 Gen 2x2 Type-C port, and Aura Sync RGB )" class="product-img hover" width="300">
+                  <p class="showcase-badge angle black">sale</p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">ASUS ROG STRIX B650-A Gaming Motherboard</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">ASUS ROG STRIX B650-A GAMING WIFI 6E Socket AM5 (LGA 1718) Ryzen 7000 gaming motherboard(12 + 2 power stages, DDR5, three M.2 slots, PCIe 4.0, 2.5G LAN, WiFi 6E, USB 3.2 Gen 2x2 Type-C port, and Aura Sync RGB )</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$100.00</p>
+                    <del>$120.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-22.png" alt="CORSAIR RM750e Fully Modular Low-Noise ATX Power Supply - ATX 3.0 & PCIe 5.0 Compliant - 105°C-Rated Capacitors - 80 PLUS Gold Efficiency - Modern Standby Support" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/product-22.2.png" alt="CORSAIR RM750e Fully Modular Low-Noise ATX Power Supply - ATX 3.0 & PCIe 5.0 Compliant - 105°C-Rated Capacitors - 80 PLUS Gold Efficiency - Modern Standby Support" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">RM750e Fully Modular Low-Noise ATX Power Supply</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">CORSAIR RM750e Fully Modular Low-Noise ATX Power Supply - ATX 3.0 & PCIe 5.0 Compliant - 105°C-Rated Capacitors - 80 PLUS Gold Efficiency - Modern Standby Support</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$25.00</p>
+                    <del>$30.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-23.jpg" alt="Athena Power AP-MFATX40P8 20+4Pin 400W Single Server Power Supply 80+ Bronze Certified" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/product-23.2.jpg" alt="Athena Power AP-MFATX40P8 20+4Pin 400W Single Server Power Supply 80+ Bronze Certified" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Athena Server Power Supply</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Athena Power AP-MFATX40P8 20+4Pin 400W Single Server Power Supply 80+ Bronze Certified</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$32.00</p>
+                    <del>$45.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-24.jpg" alt="LIAN LI O11 Dynamic EVO O11DEX Black Aluminum / Steel / Tempered Glass ATX Mid Tower Computer Case" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/product-24.2.jpg" alt="LIAN LI O11 Dynamic EVO O11DEX Black Aluminum / Steel / Tempered Glass ATX Mid Tower Computer Case" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">LIAN 011 Computer Case</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">LIAN LI O11 Dynamic EVO O11DEX Black Aluminum / Steel / Tempered Glass ATX Mid Tower Computer Case</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$58.00</p>
+                    <del>$64.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-25.jpg" alt="Creative Sound Blaster Z SE Internal PCI-e Gaming Sound Card and DAC, 24-bit / 192 kHz, 116 dB SNR, ASIO, 600O Headphones Amp, Mic EQ, Discrete 5.1 / Virtual 7.1, Supports Dolby Digital Live, DTS" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/product-25.2.jpg" alt="Creative Sound Blaster Z SE Internal PCI-e Gaming Sound Card and DAC, 24-bit / 192 kHz, 116 dB SNR, ASIO, 600O Headphones Amp, Mic EQ, Discrete 5.1 / Virtual 7.1, Supports Dolby Digital Live, DTS" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Creative Labs Sound Blaster Z SE 24-bit 192 kHz Sound Card</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Creative Sound Blaster Z SE Internal PCI-e Gaming Sound Card and DAC, 24-bit / 192 kHz, 116 dB SNR, ASIO, 600O Headphones Amp, Mic EQ, Discrete 5.1 / Virtual 7.1, Supports Dolby Digital Live, DTS</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$50.00</p>
+                    <del>$65.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/product-26.jpg" alt="Logitech C920s HD Pro Webcam, Full HD 1080p/30fps Video Calling, Clear Stereo Audio, HD Light Correction, Works with Skype, Zoom, FaceTime, Hangouts, PC/Mac/Laptop/Macbook/Tablet - Black" class="product-img default" width="300">
+                  <img src="./assets/images/products/product-26.2.jpg" alt="Logitech C920s HD Pro Webcam, Full HD 1080p/30fps Video Calling, Clear Stereo Audio, HD Light Correction, Works with Skype, Zoom, FaceTime, Hangouts, PC/Mac/Laptop/Macbook/Tablet - Black" class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Logitech C920 HD Pro Webcam</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Logitech C920s HD Pro Webcam, Full HD 1080p/30fps Video Calling, Clear Stereo Audio, HD Light Correction, Works with Skype, Zoom, FaceTime, Hangouts, PC/Mac/Laptop/Macbook/Tablet - Black</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$78.00</p>
+                    <del>$85.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/testimonial-1.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Alan Doe</p>
+
+              <p class="testimonial-title">CEO & Founder Invision</p>
+
+              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor dolor sit amet.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/cta-banner.png" alt="cta-banner" class="cta-banner">
+
+          
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Worldwide Delivery</h3>
+                  <p class="service-desc">For Order Over $100</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Next Day delivery</h3>
+                  <p class="service-desc">UK Orders Only</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Best Online Support</h3>
+                  <p class="service-desc">Hours: 8AM - 11PM</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Return Policy</h3>
+                  <p class="service-desc">Easy & Free Return</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">30% money back</h3>
+                  <p class="service-desc">For Order Over $100</p>
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+<!--
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/blog-1.jpg" alt="..................." width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">..............</a>
+
+              <a href="#">
+                <h3 class="blog-title">............</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/blog-2.jpg" alt="..........."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">...........</a>
+          
+              <h3>
+                <a href="#" class="blog-title">...........</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Mr Robin</cite> / <time datetime="2022-01-18">Jan 18, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/blog-3.jpg" alt="........... ..........."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">...........</a>
+          
+              <h3>
+                <a href="#" class="blog-title">...........</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Mr Selsa</cite> / <time datetime="2022-02-10">Feb 10, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/blog-4.jpg" alt="..........."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">...........</a>
+          
+              <h3>
+                <a href="#" class="blog-title">...........</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Mr Pawar</cite> / <time datetime="2022-03-15">Mar 15, 2022</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+-->
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Operating Systems</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Keyboards</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Monitors</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Speakers</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Power Supplies</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14812, USA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="https://www.facebook.com/" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://twitter.com/home" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.linkedin.com/" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="https://www.instagram.com/" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">PC Matrix</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
