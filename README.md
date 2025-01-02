@@ -1,6 +1,7 @@
 # PCMatrix
 
-Welcome to PCMatrix, a customizable PC components building website developed as part of our Systems Analysis and Design course project.
+Welcome to PCMatrix, a customizable PC components building website developed as part of me and my team's Systems Analysis and Design course project.
+You can view the live version of the project here: [PCMatrix GitHub Pages](https://nishiyama-jpg.github.io/PCMatrix/index8.html) ✨
 
 ## Project Overview
 
