@@ -1,6 +1,7 @@
 # PCMatrix
 
 Welcome to PCMatrix, a customizable PC components building website developed as part of me and my team's Systems Analysis and Design course project.
+
 You can view the live version of the project here: [PCMatrix GitHub Pages](https://nishiyama-jpg.github.io/PCMatrix/index8.html) ✨
 
 ## Project Overview
@@ -38,4 +39,16 @@ In our Systems Analysis and Design course, we were tasked with developing a syst
 
 ### Network Diagram
 ![Network Diagram](https://github.com/user-attachments/assets/af81b3ec-4ee4-46b7-a2ac-4fcc477a7472)
+
+
+Shield: [![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License][cc-by-nc-nd].
+
+[![CC BY-NC-ND 4.0][cc-by-nc-nd-image]][cc-by-nc-nd]
+
+[cc-by-nc-nd]: http://creativecommons.org/licenses/by-nc-nd/4.0/
+[cc-by-nc-nd-image]: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
+[cc-by-nc-nd-shield]: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
 
